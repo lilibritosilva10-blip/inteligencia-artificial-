@@ -1,0 +1,19 @@
+
+
+
+import streamlit as st
+
+
+st.header('IMC')
+
+
+n1  = st.number_input('altura ')
+n2  = st.number_input('peso')
+
+
+
+if st.button('Calcular'):
+   imc = n1 / n2 ** 2
+
+   st.info(imc) 
+
